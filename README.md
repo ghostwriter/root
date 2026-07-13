@@ -23,7 +23,18 @@ You can also star (🌟) this repo to find it easier later.
 ## Usage
 
 ```php
-// work in progress
+use Ghostwriter\Root\AbstractRootDirectory;
+
+$appRootDirectory = new readonly class('/tmp/app') extends AbstractRootDirectory {}
+
+// returns the absolute path to the root directory
+$appRootDirectory->toString(); // /tmp/app
+
+// returns the absolute path to the src directory
+$appRootDirectory->path('src'); // /tmp/app/src
+
+// returns the absolute path to the src/Foo/Bar.php file
+$appRootDirectory->path('src', 'Foo', 'Bar.php'); // /tmp/app/src/Foo/Bar.php
 ```
 
 ### Credits
