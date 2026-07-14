@@ -7,7 +7,7 @@
     "state": "open"
 "repository":
   "name": "root"
-  "description": "[WIP] Project root directory implementation in PHP"
+  "description": "Project root directory implementation in PHP"
   "homepage": "https://github.com/ghostwriter/root"
   "default_branch": "0.1.x"
   "allow_auto_merge": true
